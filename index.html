@@ -7,17 +7,31 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Michroma&display=swap"
+      rel="stylesheet"
+    />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
   </head>
   <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="#contacts">Contacts</a>
+          </li>
+          <li><a href="#aboutme">About Me</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#code">Code Example</a></li>
+          <li><a href="#courses">Courses</a></li>
+        </ul>
+      </nav>
+      <h1 id="contacts">Estate Lelashvili CV</h1>
+    </header>
     <main>
-      <header>
-        <p><i class="fa fa-map-marker" aria-hidden="true"></i> Location</p>
-        <p>Tbilisi, Georgia</p>
-        <h1>Estate Lelashvili CV</h1>
-      </header>
       <section>
         <h2>Contact</h2>
         <ul>
@@ -36,18 +50,20 @@
         </ul>
       </section>
       <img
+        id="aboutme"
         class="tatoImage"
         src="https://user-images.githubusercontent.com/35972253/163650705-5d35cc61-0e7c-4b66-b749-a240d2236c8a.jpg"
         alt="Sorry... image not found!"
       />
 
-      <section>
+      <section id="education">
         <h2>About Me</h2>
         <p>
-          I am a psychologist though recently I found a new passion in coding. I
-          enjoy learning more about computer science and building apps. My
-          current goal is to become a web developer. With positive attitude and
-          hard work I hope I will suceed.
+          I am a psychologist though recently I found a new passion in coding.
+          <br />
+          I enjoy learning more about computer science and building apps. <br />
+          My current goal is to become a web developer. <br />
+          With my positive attitude and hard working I hope I will suceed.
         </p>
       </section>
       <section>
@@ -56,30 +72,45 @@
           Bachelor’s degree in psychology at the Tbilisi Ilia State University.
         </p>
       </section>
-      <section>
+      <section id="skills">
         <h2>Skills</h2>
-        <ul class="skils">
+        <ul>
           <li>Basic HTML</li>
           <li>Basic CSS</li>
           <li>Basic Git</li>
           <li>Basic JavaScript</li>
         </ul>
       </section>
-      <section>
+      <section id="codes">
         <h2>Project Example</h2>
         <a href="https://estatelelashvili.github.io/reactive-shop/">
           Online Shop in React</a
         >
       </section>
-      <section>
+      <section id="code">
         <h2>Code Example</h2>
-        <img
-          class="codeSnapShot"
-          src="https://user-images.githubusercontent.com/35972253/163865871-2d65a970-82b7-442e-8895-802a69b87b8c.png"
-          alt="Sorry...Code image not found!"
-        />
+        <h3><b>Binary Search</b></h3>
+        <pre>
+            <code>
+              <span class="function_Let">function</span> <span class="className">binary_search </span><span class="squareBrackets">(</span><span></span> <span class="variable_Curly">array,</span ><span class="variable_Curly">targetValue</span ><span class="squareBrackets">) </span><span class="squareBrackets">{</span>
+              <span class="function_Let">   let</span> <span class="variable_Curly"> min </span > <span class="equal">=</span><span class="variable_Curly"> 0;                                            </span >
+              <span class="function_Let">   let</span> <span class="variable_Curly"> max </span > <span class="equal">=</span><span class="variable_Curly"> array.length - 1;                     </span >
+              <span class="return_if">   while (</span><span class="variable_Curly"> min </span><span class="equal">&lt;</span><span class="equal">=</span><span class="variable_Curly"> max </span> <span class="return_if">)</span><span class="return_if"> {                             </span>
+              <span class="variable_Curly">   midpoint</span><span class="equal"> = </span><span class="variable_Curly">Math</span><span class="className">.floor</span><span class="variable_Curly">(</span><span class="squareBrackets">(</span><span class="variable_Curly"> min </span><span class="equal">+</span><span class="variable_Curly"> max </span><span class="squareBrackets">)</span><span class="equal"> / 2</span><span class="variable_Curly">);</span>
+              <span class="return_if">        if </span><span class="variable_Curly">(</span><span class="variable_Curly"> array</span><span class="squareBrackets">[</span><span class="variable_Curly">midpoint</span ><span class="squareBrackets">]</span><span class="variable_Curly"> === targetValue</span><span class="variable_Curly"> )</span><span class="variable_Curly">{</span>
+                <span class="return_if">           return </span> <span class="variable_Curly"> midpoint;                          </span > 
+              <span class="variable_Curly">        }</span> <span class="return_if">  else if </span><span class="variable_Curly">(</span><span class="variable_Curly"> array</span><span class="squareBrackets">[</span><span class="variable_Curly">midpoint</span ><span class="squareBrackets">]</span><span class="variable_Curly"> &lt; targetValue</span><span class="variable_Curly"> )</span><span class="variable_Curly">{</span>
+                <span class="variable_Curly">            min = midpoint + 1;                       </span>
+              <span class="variable_Curly">        }</span> <span class="return_if">  else if </span><span class="variable_Curly">(</span><span class="variable_Curly"> array</span><span class="squareBrackets">[</span><span class="variable_Curly">midpoint</span ><span class="squareBrackets">]</span><span class="variable_Curly"> &lt; targetValue</span><span class="variable_Curly"> )</span><span class="variable_Curly">{</span>
+                <span class="variable_Curly">            min = midpoint - 1;                        </span>
+                <span class="variable_Curly">      }                                                           </span>
+              <span class="return_if">   }                                                                 </span>
+              <span class="return_if">     return -1;                                                 </span>
+              <span class="squareBrackets">}                                                                     </span>
+            </code>
+            </pre>
       </section>
-      <section>
+      <section id="courses">
         <h2>Courses</h2>
         <ul>
           <li>
@@ -103,7 +134,7 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section id="languages">
         <h2>Languages</h2>
         <ul>
           <li>
@@ -113,7 +144,7 @@
           <li>Georgian (native)</li>
         </ul>
       </section>
-      <hr />
+      <!-- <hr /> -->
     </main>
     <footer>
       <a href="https://github.com/estatelelashvili" target="_blank">
