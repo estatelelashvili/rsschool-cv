@@ -40,11 +40,6 @@
   }
 
 
-
-  p{
-    margin-bottom: 50px;
-  }
-
   h2 {
     color: #fff;
     display: flex;
@@ -122,6 +117,10 @@
     color: inherit;
   }
 
+  .navBetter{
+    margin-top: 50px;
+  }
+
 
   footer {
     background-color: #0099cc;
@@ -153,14 +152,23 @@ color: purple;
 color: gold;
 }
 
-.className{
+.funcName{
   color: rgb(192, 192, 33);
 }
 
 code{
   background-color: black;
-
 }
+
+.codeBG{
+  background-color: black;
+  font-weight: bold;
+}
+
+
+
+
+  
 
 
 
