@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+* {
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    font-weight: 500;
+    scroll-behavior: smooth;
+  }
+
+
+  body{
+    background-color: #0099cc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  h1{
+    margin-top: 150px;
+  }
+
+  main{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+  }
+
+  header{
+    margin: auto;
+    color: #fff;
+    padding-top: 0;
+    word-wrap: break-word;
+  }
+
+
+  h2 {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .loc{
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .navbar {
+    padding-top: 0;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    height: 100px;
+    background-color: #2C64B4;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar ul li {
+    display: inline;
+  }
+
+  .navbar a {
+    background-color: gray;
+    color: #0099cc;
+    font-weight: bolder;
+    padding: 5px;
+    font-size: 15px;
+    line-height: 40px;
+    cursor: pointer;
+    text-decoration: none;
+    transition-duration: 0.3s;
+  }
+  
+  
+  .tatoImage {
+    height: 150px;
+    border-radius: 75px;
+  }
+  .codeSnapShot{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  a {
+    text-decoration: none;
+    background-color: yellow;
+    padding: 10px;
+    font-family: Verdana;
+    border-radius: 8px;
+    border-color: white;
+  }
+  
+  a:hover {
+    background-color: white;
+    font-weight: bold;
+  }
+
+.noBG{
+  font-size: 12px;
+    margin-left: 12px;
+    padding: 2px;
+    background-color:yellow;
+    color: inherit;
+}
+  .lowA{
+    padding: 2px;
+    background-color:inherit;
+    color: inherit;
+  }
+
+  .navBetter{
+    margin-top: 50px;
+  }
+
+
+  footer {
+    background-color: #0099cc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    
+}
+  
+
+.function_Let{
+  color: blue;
+}
+
+.variable_Curly{
+  color: skyblue;
+}
+
+.return_if{
+color: purple;
+}
+
+.equal{
+  color: lightgray;
+}
+
+.squareBrackets{
+color: gold;
+}
+
+.funcName{
+  color: rgb(192, 192, 33);
+}
+
+code{
+  background-color: black;
+}
+
+.codeBG{
+  background-color: black;
+  font-weight: bold;
+}
+
+
+
+
+  
+
+
+
+  
